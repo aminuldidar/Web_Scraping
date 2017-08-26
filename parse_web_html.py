@@ -1,3 +1,4 @@
+#exec(open('C:/Users/Sophomore/Dropbox/APythonCode/ParseWebHtml/parse_web_html.py').read())
 from html.parser import HTMLParser
 from string import punctuation
 import pymysql.cursors
@@ -23,7 +24,6 @@ class MyHTMLParser(HTMLParser):
 			self.cunter= self.cunter+1;
 			self.tg= ' '
 			#exec(open('C:/Users/Sophomore/Dropbox/APythonCode/sql.py').read())
-			#exec(open('C:/Users/Sophomore/Dropbox/APythonCode/parse_html2.py').read())
 			data=data.strip()
 			print("Encountered :", data)
 			if(self.cunter == 1):
@@ -75,4 +75,4 @@ parser = MyHTMLParser()
 parser.feed('<html><head><title>Test</title></head>'
             '<body><h1>Parse me!</h1></body></html>')
 """
-parser.feed(open('C:/Users/Sophomore/Dropbox/APythonCode/test5.html').read())
+parser.feed(open('C:/Users/Sophomore/Dropbox/APythonCode/ParseWebHtml/test5.html').read())
